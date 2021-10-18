@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Artis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <style  media="screen">
+   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+  .carousel-cell {
+    width: 100%;
+    }
+    .carousel-cell:before {
+      display: block;
+    }
+* { box-sizing: border-box; }
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  place-items: center;
+}
+
+.carousel-cell {
+  width: 28%;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: 100px;
+}
+
+.carousel-cell3 img{
+    width: 300px;
+    height: 200px;
+    display: inline;
+    margin: 10px;
+}
+
+.carousel-cell3 .bx{
+  display: inline-block;
+  padding: 2rem;
+  margin:20px;
+  max-width: 40%;
+  width: 300px;
+  text-color: black;
+  text-align: center;
+  box-shadow: 3px 3px 4px #BCBCBC, -3px -3px 4px #BCBCBC;
+}
+h4{
+    text-align: center;
+}
+
+.button {
+  background-color: #555555;
+  color: white;
+  margin-top: 50px;
+  border-radius: 20%;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+  #section1 {
+  width: 100%;
+  height: 100vh;
+  background: url(images/home.jpg);
+  background-size: cover;
+  background-position: center; 
+}
+  #section2 {padding-top:50px;height:600px;color: #fff; }
+  #section3 {padding-top:50px;height:500px;color: #fff;background:  #3A3A3A; }
+  #section4 {padding-top:50px;height:600px;color: #fff; }
+  #section5 {padding-top:50px;height:500px;color: #fff; background: url(images/p8.jpg);}
+  #section6 {padding-top:50px;height:600px; }
+  #section7 {padding-top:50px;height:200px; }
+
+.button5 {
+  background-color: gray;
+  border: none;
+  color: white;
+  float: rigth;
+  padding: 10px 32px;
+  text-align: center;
+  margin-left: 50%;
+  margin-bottom: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 50px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button5 button5{
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+h6,h5 {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.wrapper2 .button2{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: center;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper2 .button2:hover{
+  width: 200px;
+  
+}
+.wrapper2 .button2 .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper2 .button2:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper2 .button2:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper2 .button2:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper2 .button2:nth-child(4):hover .icon{
+  background: #ff0000;
+}
+.wrapper2 .button2 .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper2 .button2:hover .icon i{
+  color: #fff;
+}
+.wrapper2 .button2 span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper2 .button2:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper2 .button2:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper2 .button2:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper2 .button2:nth-child(4) span{
+  color: #ff0000;
+}
+
+.gotopbtn{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #b06f97;
+  bottom: -120px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+.navbar2 {
+  position: absolute;
+  bottom: -150px;
+  width: 100%;
+  height: 100px;
+  padding: 10px 90px;
+  box-sizing: border-box;
+  background: rgb(158, 157, 157);
+  opacity: 0.5;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar2 a {
+  float: left;
+  text-align: center;
+  color: black;
+  padding: 12px 30px;
+  text-decoration: none;
+  margin: 15px 2px;
+  font-size: 14px;
+  /*text-transform: uppercase;*/
+}
+
+.navbar2 h5 {
+  float:left;
+  line-height: 55px;
+  color: black;
+  margin-right: 100px;
+  text-decoration: none;
+  font-size: 14px;
+  /*text-transform: uppercase;*/
+  text-align: left;
+}
+
+.navbar2 a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar2 a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+hr.one{
+  border: none;
+  height: 1px;
+  margin-bottom: 150px;
+  background: #b06f97;
+}
+
+h1, h2 {
+            font-weight: 700;
+            text-align: center;
+        }
+        .left-col, .right-col {
+            width: 25%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+            float: left;
+        }
+        .footer {
+            clear: both;
+            text-align: center;
+            height: 50px;
+            padding-top: 20px;
+            padding-bottom: 200px;
+            box-sizing: border-box;
+        }
+
+        .header img{
+           display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; 
+}
+.column img{
+    width:100%;
+    height: 357px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  /*display: table-cell;
+  padding: 10px;*/
+  width: 40%;
+  float: left;
+}
+
+#section3 .col-container .col .imgBx img{
+  margin-left:200px;
+    width:350px;
+    height:370px;
+}
+
+
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><!--<img src="logo.png" alt="Arts" width="170" height="70">--> </a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">Despre Noi</a></li>
+          <li><a href="#section3">Servicii</a></li>
+          <li><a href="#section4">Pacienti</a></li>
+          <li><a href="#section5">Gift Card</a></li>
+          <li><a href="#section6">Blog</a></li>
+          <li><a href="#section7">Contact</a></li>
+          <button class="button button5" style="color:black">Programeaza-te</button>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid" style="text-align:center">
+  <div class="centered">Beauty is
+  <p style="color:rgb(165, 109, 146)">possible</p>
+  <font size="-0.5">Centru de chirurgie estetica</font>
+  </div>
+  <a class="my-button" title="Relevant Title" href="#">Cazuri clinice</a>
+  <a class="my-button" title="Relevant Title" href="#">Vezi servicii</a>
+</div>
+<div id="section2" class="container-fluid">
+  <h6 style="color:#ff005c">va oferim</h6>
+  <h2 style="color:#303030">Servicii Clinica</h2>
+  <div class=".thumbnail-slider">
+  <!--<div class="carousel2" data-flickity='{ "wrapAround": true, "autoPlay": false, "imagesLoaded":true }'>-->
+      <div class="carousel-cell3">
+      <div class="bx">
+        <h5 style="color:#303030">Chirurgie estetica</h5>
+        <h6 style="color:#ff005c">vezi lista proceduri</h6>
+      </div>
+      <div class="bx">
+        <h5 style="color:#303030">Chirurgie plastica</h5>
+        <h6 style="color:#ff005c">vezi lista proceduri</h6>
+      </div>
+      <div class="bx">
+      <h5 style="color:#303030">Proceduri cosmetice</h5>
+      <h6 style="color:#ff005c">vezi lista proceduri</h6>
+      </div>
+      <br>
+        <img class="w3-image" src="images/p1.jpg">
+        <img class="w3-image" src="images/p2.jpg">
+        <img class="w3-image" src="images/p3.jpg">
+      </div>
+
+      <div class="carousel-cell3">
+      <div class="bx">
+        <h5 style="color:#303030">Proceduri cosmetice</h5>
+        <h6 style="color:#ff005c">vezi lista proceduri</h6>
+      </div>
+      <div class="bx">
+        <h5 style="color:#303030">Chirurgie estetica</h5>
+        <h6 style="color:#ff005c">vezi lista proceduri</h6>
+      </div>
+      <div class="bx">
+      <h5 style="color:#303030">Chirurgie plastica</h5>
+      <h6 style="color:#ff005c">vezi lista proceduri</h6>
+      </div>
+      <br>
+        <img class="w3-image" src="images/p4.jpg">
+        <img class="w3-image" src="images/p5.jpg">
+        <img class="w3-image" src="images/p6.jpg">
+      </div>
+
+
+<button style="color:#ff005c; border-radius: 50%; font-size: 20px;" onclick="showPrev()"> 01</button>
+<button style="color:#ff005c; border-radius: 50%; font-size: 20px;" onclick="showNext()"> 02</button>
+<button style="color:#ff005c; border-radius: 50%; font-size: 20px;" onclick="showNext()">&#8594;</button>
+
+<script>
+  var visibleDiv = 0;
+  function showDiv()
+  {
+    $(".carousel-cell3").hide();
+    $(".carousel-cell3:eq("+ visibleDiv +")").show();
+  }
+  showDiv()
+
+function showNext()
+{
+  if(visibleDiv== $(".carousel-cell3").length-1)
+  {
+    visibleDiv = 0;
+  }
+  else {
+    visibleDiv ++;
+  }
+  showDiv();
+}
+
+
+function showPrev()
+{
+  if (visibleDiv == 0)
+  {
+    visibleDiv= $(".carousel-cell3").length-1
+  }
+  else {
+    visibleDiv --;
+  }
+  showDiv();
+}
+
+</script>
+
+
+    </div>
+    </div>
+  
+  
+  <!-- controls slides -->
+  <!--<div class="controls">
+  </div>
+
+</div>
+
+<script src="script3.js"></script>-->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</div>
+
+<div id="section3" class="container-fluid">
+
+<h6 style="color:#ff005c;">mai multe</h6>
+  <h2>Clinica Noastra</h2>
+  <h6 style="color:gray">Filozofia clinicii pune in prim plan confortul pacientilor si calitatea seviciilor</h6>
+  <!--<span style="margin:0px;">&#x23AF;</span>-->
+
+<div class="col-container">
+  <div class="col">
+    <div class="imgBx">
+  <img src="images/building.jpg">
+  </div>
+  </div>
+
+  <div class="col">
+            <h6 style="text-align:left">
+                DESPRE ARTIS3Clinica Artis-3 este la ora actuala una dintre cele mai moderne,elegante si bine echipate clinici private de chirurgie din tara. Specialisti din domeniul chirurgiei plastice si estetice , al ortopediei ,chirurgiei infantile,ginecologiei,chirurgiei generale,chirurgiei oncologice
+                <span id="dots">...</span><span id="more">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+                </span>
+            </h6>
+            <span onclick="myFunction()" id="myBtn" style="font-size: small; color:#ff005c;">Read More...</span>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+  </div>
+  </div>
+
+</div>
+
+</div>
+
+<div id="section4" class="container-fluid">
+  <h6 style="color:#ff005c">echipa</h6>
+    <h1 class="w3-center" style="color:#303030">Medicii nostri</h1>
+    <h6 style="color:gray">Cunoaste specialistii nostri din domeniul chirurgiei plastice si estetice</h6>
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
+        <img class="w3-image" src="images/p1.jpg">
+        <h4 style="color:#303030">Dr. Ana Mantea</h4>
+        <h6 style="color:#ff005c">medic specialist</h6>
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="images/p2.jpg">
+        <h4 style="color:#303030">Dr. Alexandru Vadan</h4>
+        <h6 style="color:#ff005c">medic primar</h6>
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="images/p3.jpg">
+        <h4 style="color:#303030">Dr. Paul Rad</h4>
+        <h6 style="color:#ff005c">nutritionist</h6>
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="images/p4.jpg">
+        <h4 style="color:#303030">Dr. Amalia Talpos</h4>
+        <h6 style="color:#ff005c">nutritionist</h6>
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="images/p5.jpg">
+        <h4 style="color:#303030">Dr. Flavia Pintican</h4>
+        <h6 style="color:#ff005c">medic specialist</h6>
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="images/p6.jpg">
+        <h4 style="color:#303030">Dr. Alina Pop</h4>
+        <h6 style="color:#ff005c">nutritionist</h6>
+      </div>
+
+    </div>
+
+<button class="button5">VEZI ECHIPA NOASTRA</button>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+
+</div>
+<div id="section5" class="container-fluid">
+  <h6>de ce sa ne alegi?</h6>
+<h1>Avantaje Artis</h1>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <h4>1. Clinica moderna,eleganta si bine echipata</h4>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+       <h4> Web Development broadly refers to the tasks associated with developing functional websites and applications for the Internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.</h4>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <h4>2. Specialisti bine pregatiti din diverse domenii</h4>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <h4>HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and anything that can be viewed in a web browser.</h4>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <h4>3. Atmosfera destinsa,calma si calda</h4>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <h4>HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and anything that can be viewed in a web browser.</h4>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+</div>
+
+
+    <script src="script2.js"></script>
+</div>
+<div id="section6" class="container-fluid">
+  
+<h6 style="color:#ff005c">de pe blog</h6>
+<h2>Ultimile Articole</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="images/desk.jpg">
+  </div>
+  <div class="column">
+    <p style="font-size: small">Luni - Vineri: 08:00 - 20:00</p>
+    <p style="font-size: small">Sambata: 10:00 - 13:00</p>
+    <p style="font-size: small">Artis</p>
+    <p style="font-size: small">Str. Republicii nr.82B</p>
+     <span style="font-size:20%;color:orange;">4.6 &starf;</span><span style="font-size:20%;color:orange;">&starf;</span><span style="font-size:20%;color:orange;">&starf;</span><span style="font-size:20%;color:orange;">&starf;</span><span style="font-size:20%;color:gray; margin-left:30px;"> 43,198 reviews</span>
+    <div class="section"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d341.6623846183751!2d23.592489134912363!3d46.75900104185876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c2ce0e83395%3A0x2b6bdcd1191dfba5!2sArtis%203!5e0!3m2!1sro!2sro!4v1631955916491!5m2!1sro!2sro" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+   
+  </div>
+  <div class="column">
+    <img src="images/face.jpg">
+  </div>
+
+  <div class="column">
+  <h6 style="color:#ff005c;">Frumusete</h6>
+  <h5>GROPITE IN BUJORI - ACUM O DORINTA INDEPLINITA</h5>
+            <h6 style="text-align:left">
+                Studiile arata ca oamenii cu gropite in bujori sunt considerati extrem de atragatori si doar 20% din populatia lunii se nasc cu acestea.
+                <span id="dots2">...</span><span id="more2">
+                   Specialisti din domeniul chirurgiei plastice si estetice , al ortopediei ,chirurgiei infantile,ginecologiei,chirurgiei generale,chirurgiei oncologice
+                </span>
+            </h6>
+            <span onclick="myFunction2()" id="myBtn2" style="font-size: small; color:#ff005c;">Read More...</span>
+
+<script>
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+  </div>
+</div>
+</div>
+
+<div id="section7" class="container-fluid">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+<div class="header">
+    <img src="images/artis.png" width="200px" height="150px">
+</div>
+<div class="container">
+    <div class="left-col">
+        <h5>Adresa Str.Repubicii nr.82B</h5>
+        
+    </div>
+    <div class="center-col">
+        <h5>Mobil +40-751-050.303</h5>
+        
+    </div>
+    <div class="right-col">
+        <h5>E-mail: contact@artis3.ro</h5>
+        
+    </div>
+</div>
+</div>
+<div class="footer">
+    <div class="wrapper2">
+      <div class="button2">
+        <div class="icon"><i class="fab fa-facebook-f"></i></div>
+        <span>Facebook</span>
+      </div>
+      <div class="button2">
+        <div class="icon"><i class="fab fa-twitter"></i></div>
+        <span>Twitter</span>
+      </div>
+      <div class="button2">
+        <div class="icon"><i class="fab fa-instagram"></i></div>
+        <span>Instagram</span>
+      </div>
+      <div class="button2">
+        <div class="icon"><i class="fab fa-youtube"></i></div>
+        <span>YouTube</span>
+      </div>
+    </div>
+</div>
+<hr class="one">
+    <div class="navbar2">
+<h5 style="font-align:left">Parteneri &middot; Cariere </h5>
+  <a href="#section1">Home</a>
+  <a href="#section2">Despre Noi</a>
+  <a href="#section3">Servicii</a>
+  <a href="#section4">Pacienti</a>
+  <a href="#section5">Gift Card</a>
+  <a href="#section6">Blog</a>
+  <a href="#section7">Contact</a></li>
+</div>
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+</div>
+
+
+</body>
+</html>
+
